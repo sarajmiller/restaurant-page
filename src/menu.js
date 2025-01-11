@@ -84,10 +84,18 @@ export function renderMenu() {
         p1.textContent = item.description;
         description.appendChild(p1);
 
+        const menuBreak = document.createElement("div")
+        menuBreak.classList.add("menu-break");
+        description.appendChild(menuBreak);
+
         if (item.extra) {
             const pExtra = document.createElement("p");
             pExtra.textContent = item.extra;
             description.appendChild(pExtra);
+
+            const menuBreak = document.createElement("div")
+            menuBreak.classList.add("menu-break");
+            description.appendChild(menuBreak);
         }
 
         const price = document.createElement("p");

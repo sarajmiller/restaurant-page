@@ -40,7 +40,7 @@ export function renderHomepage() {
 
     const paragraph2 = document.createElement("p");
     paragraph2.classList.add('paragraph');
-    paragraph2.textContent = "8080 Wisteria Ln, Cherry Tree Forest, MC"
+    paragraph2.textContent = "8080 Wisteria Lane, Cherry Tree Forest, MC"
 
     content.append(Location);
     content.append(paragraph2);

@@ -2,6 +2,7 @@ import "./styles.css";
 import { renderMenu } from "./menu.js";
 import { renderHeader } from "./header.js";
 import { renderHomepage } from "./home.js";
+import { renderContact } from "./contact.js";
 
 renderHeader();
 renderHomepage();
@@ -20,4 +21,9 @@ home.addEventListener("click", () => {
 menu.addEventListener("click", () => {
     content.innerHTML = "";
     renderMenu();
+})
+
+contact.addEventListener("click", () => {
+    content.innerHTML = "";
+    renderContact();
 })

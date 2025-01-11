@@ -27,7 +27,7 @@ nav {
     background-color: rgba(288, 217, 239, 0.6);
 }
 
-li {
+nav>li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
@@ -38,6 +38,11 @@ ul {
     text-align: center;
     padding: 0;
     font-size: 20px;
+}
+
+nav>li>ul:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #content {
@@ -56,11 +61,21 @@ ul {
 
 #content #content-header {
     font-size: 35px;
+    padding-top: 20px;
+}
+
+#content li {
+    list-style: none;
 }
 
 .title {
     font-size: 30px;
     margin-bottom: 0;
+}
+
+.paragraph {
+    font-size: 20px;
+    padding: 0 50px 0 50px;
 }
 
 #menu-items {
@@ -96,8 +111,9 @@ ul {
 }
 
 img {
-    width: 128px;
-    height: 128px;
+    width: 180px;
+    height: 180px;
+    padding-left: 50px;
 }
 
 

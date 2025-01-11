@@ -4,43 +4,17 @@ import fishingRod from "./images/fishing_rod.png"
 
 export function renderMenu() {
     
-    // initialize constants for the body and the content from the template
-    const body = document.querySelector('body')
-    const content = document.getElementById('content')
-    
-    // create background and add it to the body
-    const background = document.createElement("div");
-    background.id = "background";
-    body.prepend(background);
-
-    // create a header and use an array and for loop to create navbar items
-    const header = document.createElement("header");
-    const nav = document.createElement("nav");
-    const li = document.createElement("li");
-
-    const navItems = ["Home", "Menu", "Contact"];
-
-    navItems.forEach((item) => {
-        const ul = document.createElement("ul");
-        ul.textContent = item;
-        li.appendChild(ul);
-    })
-
-    nav.appendChild(li);
-    header.appendChild(nav);
-    body.prepend(header);
-
     const contentHeader = document.createElement("div");
     contentHeader.id = "content-header";
-    contentHeader.textContent = "⊹₊⁺⋆.˚₊+ Sara's Cottage +₊˚.⋆⁺₊⊹"
+    contentHeader.textContent = "⊹₊⁺⋆.˚₊+ Menu +₊˚.⋆⁺₊⊹"
 
     content.append(contentHeader);
 
-    const title = document.createElement("p");
-    title.classList.add('title');
-    title.textContent = "Welcome to Sara's Cottage!";
+    // const title = document.createElement("p");
+    // title.classList.add('title');
+    // title.textContent = "Sara's Cottage - Menu";
 
-    content.append(title);
+    // content.append(title);
 
     // create menu items
     const menuItems = document.createElement("div");
@@ -63,7 +37,7 @@ export function renderMenu() {
         {
             title: "Fishing Rod",
             description: "Buy a girl eat fish, she day. Teach fish girl, to a lifetime.",
-            extra: "Enchanted with Luck of the Sea III, Mending I, and Lure III, who knows what kinds of sweet treats you can obtain?",
+            extra: "Enchanted with Luck of the Sea III, Mending I, and Lure III, who knows what kinds of sweet treats you will obtain?",
             price: "20 diamonds",
             image: fishingRod,
         },
